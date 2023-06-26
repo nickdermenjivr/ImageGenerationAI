@@ -29,11 +29,12 @@ function updateSubitems(item) {
 }
 
 function editPrompt() {
-    
-    var text = document.getElementById('prompt-result').innerText;
-    document.getElementById('input').value = text;
-    
-    document.getElementById('prompt-result').innerHTML = '<span>' + text + '</span>';
+    var prompt = document.getElementById('prompt-result');
+    var inputField = document.getElementById('input');
+
+    inputField.value = prompt.innerText;
+    prompt.innerText?inputField.focus():inputField.unfocus();
+    prompt.innerHTML = '<span style="color: #fff">' + prompt.innerText + '</span>';
 }
 
 function extractTextFromSpan(text) {
@@ -49,13 +50,14 @@ var dynamicText = extractTextFromSpan(promptText);
 
 inputField.addEventListener('input', function(event){
     var enteredText = event.target.value;
-    dynamicText = enteredText;
-    replaceTextInSpan(dynamicText);
+    replaceTextInSpan(enteredText);
 })
 
 
 function replaceTextInSpan(newText) {
-  var promptResult = document.getElementById('prompt-result');
-  var updatedText = promptResult.innerHTML.replace(/<span>.*?<\/span>/g, '<span>' + ' ' + newText + '</span>');
-  promptResult.innerHTML = updatedText;
+    var promptResult = document.getElementById('prompt-result');
+    var spanElement = promptResult.querySelector('span');
+    if(spanElement) {
+        spanElement.innerText = newText;
+    }
 }

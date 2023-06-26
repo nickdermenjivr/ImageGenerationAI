@@ -88,15 +88,16 @@ body {
 }
 
 .input-section input {
-    min-width: 70%; /* измените на нужную ширину */
+    width: 75%; /* измените на нужную ширину */
     height: 40px; /* измените на нужную высоту */
     margin-right: 10px;
     color: orange;
     padding-left: 10px;
+    text-transform: capitalize;
 }
 
 .input-section button {
-    min-width: 30%; /* измените на нужную ширину */
+    min-width: 25%; /* измените на нужную ширину */
     height: 40px; /* измените на нужную высоту */
     background-color: orange;
     color: white;
@@ -115,8 +116,7 @@ body {
 }
 
 .prompt-result {
-    min-width: 70%;
-    height: contain;
+    width: 75%;
     margin-right: 10px;
     color: white;
 }
@@ -126,7 +126,7 @@ body {
 }
 
 .prompt-result-section button {
-    min-width: 30%; /* измените на нужную ширину */
+    min-width: 25%; /* измените на нужную ширину */
     height: 25px; /* измените на нужную высоту */
     background-color: grey;
     color: white;
