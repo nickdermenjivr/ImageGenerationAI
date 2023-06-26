@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="mainStyle.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <h3>Select your style</h3>
+
+            <!-- Основные категории -->
+            <div class="row">
+                <div class="item" onclick="updateSubitems('item1')">Logo/ Icon/ Sticker</div>
+                <div class="item" onclick="updateSubitems('item2')">Objects</div>
+                <div class="item" onclick="updateSubitems('item3')">People & Animals</div>
+                <div class="item" onclick="updateSubitems('item4')">Art</div>
+                <div class="item" onclick="updateSubitems('item5')">Graphics</div>
+                <div class="item" onclick="updateSubitems('item6')">Business</div>
+            </div>
+            
+            <!-- Подкатегории 1 -->
+            <div class="subitems" id="item1">
+                <div class="row" style="padding-top: 20px">
+                    <div class="subitem" id="subitem1" onclick="updateContent('logo1.webp', '<span>logo for a research lab</span>, brandmark, mind wandering, hip corporate, no text, trendy, vector art, concept art')">logos</div>
+                    <div class="subitem" id="subitem2" onclick="updateContent('icon1.webp', '<span>bunny</span>, logo, icon, color lilac and violet and white, simple, background transparent , Water Color')">icons</div>
+                    <div class="subitem" id="subitem3" onclick="updateContent('sticker1.jpg', 'Die-cut sticker, <span>Cute kawaii flower</span> character sticker, white background, illustration minimalism, vector, pastel colors')">stickers</div>
+                </div>
+            </div>
+
+            <!-- Подкатегории 2 -->
+            <div class="subitems" id="item2">
+                <div class="row" style="padding-top: 20px">
+                    <div class="subitem" id="subitem1" onclick="updateContent('subitem1', 'text1')">old buildings</div>
+                    <div class="subitem" id="subitem2" onclick="updateContent('subitem1', 'text1')">vehicles</div>
+                    <div class="subitem" id="subitem3" onclick="updateContent('subitem1', 'text1')">food</div>
+                    <div class="subitem" id="subitem4" onclick="updateContent('subitem1', 'text1')">modern buildings</div>
+                    <div class="subitem" id="subitem5" onclick="updateContent('subitem1', 'text1')">mini plants</div>
+                </div>
+
+                <div class="row">
+                    <div class="subitem" id="subitem6" onclick="updateContent('subitem1', 'text1')">clothing</div>
+                    <div class="subitem" id="subitem7" onclick="updateContent('subitem1', 'text1')">jewelry</div>
+                    <div class="subitem" id="subitem8" onclick="updateContent('subitem1', 'text1')">books</div>
+                    <div class="subitem" id="subitem9" onclick="updateContent('subitem1', 'text1')">cards</div>
+                    <div class="subitem" id="subitem10" onclick="updateContent('subitem1', 'text1')">posters</div>
+                </div>
+            </div>
+
+            <!-- Подкатегории 3 -->
+            <div class="subitems" id="item3">
+                <div class="row" style="padding-top: 20px">
+                    <div class="subitem" id="subitem1" onclick="updateContent('subitem1', 'text1')">portraits</div>
+                    <div class="subitem" id="subitem2" onclick="updateContent('subitem1', 'text1')">profile pics</div>
+                    <div class="subitem" id="subitem3" onclick="updateContent('subitem1', 'text1')">animals</div>
+                    <div class="subitem" id="subitem4" onclick="updateContent('subitem1', 'text1')">kids</div>
+                </div>
+
+                <div class="row">
+                    <div class="subitem" id="subitem5" onclick="updateContent('subitem1', 'text1')">school</div>
+                    <div class="subitem" id="subitem6" onclick="updateContent('subitem1', 'text1')">lessons</div>
+                    <div class="subitem" id="subitem7" onclick="updateContent('subitem1', 'text1')">university</div>
+                    <div class="subitem" id="subitem8" onclick="updateContent('subitem1', 'text1')">social interactions</div>
+                </div>
+            </div>
+
+            <!-- Подкатегории 4 -->
+            <div class="subitems" id="item4">
+                <div class="row" style="padding-top: 20px">
+                    <div class="subitem" id="subitem1" onclick="updateContent('subitem1', 'text1')">illustration</div>
+                    <div class="subitem" id="subitem2" onclick="updateContent('subitem1', 'text1')">fotography</div>
+                    <div class="subitem" id="subitem3" onclick="updateContent('subitem1', 'text1')">painting</div>
+                    <div class="subitem" id="subitem4" onclick="updateContent('subitem1', 'text1')">unique styles</div>
+                    <div class="subitem" id="subitem5" onclick="updateContent('subitem1', 'text1')">futuristic</div>
+                    <div class="subitem" id="subitem6" onclick="updateContent('subitem1', 'text1')">watercolor scenes</div>
+                </div>
+
+                <div class="row">
+                    <div class="subitem" id="subitem7" onclick="updateContent('subitem1', 'text1')">minimal art</div>
+                    <div class="subitem" id="subitem8" onclick="updateContent('subitem1', 'text1')">simple tech brands</div>
+                    <div class="subitem" id="subitem9" onclick="updateContent('subitem1', 'text1')">nature/ landscape</div>
+                    <div class="subitem" id="subitem10" onclick="updateContent('subitem1', 'text1')">fantasy</div>
+                    <div class="subitem" id="subitem11" onclick="updateContent('subitem1', 'text1')">oil art</div>
+                    <div class="subitem" id="subitem12" onclick="updateContent('subitem1', 'text1')">pixels</div>
+                </div>
+            </div>
+
+            <!-- Подкатегории 5 -->
+            <div class="subitems" id="item5">
+                <div class="row" style="padding-top: 20px">
+                    <div class="subitem" id="subitem1" onclick="updateContent('subitem1', 'text1')">graphic design</div>
+                    <div class="subitem" id="subitem2" onclick="updateContent('subitem1', 'text1')">cartoon</div>
+                    <div class="subitem" id="subitem3" onclick="updateContent('subitem1', 'text1')">anime</div>
+                    <div class="subitem" id="subitem4" onclick="updateContent('subitem1', 'text1')">comic</div>
+                    <div class="subitem" id="subitem5" onclick="updateContent('subitem1', 'text1')">tatto design</div>
+                </div>
+
+                <div class="row">
+                    <div class="subitem" id="subitem6" onclick="updateContent('subitem1', 'text1')">interior design</div>
+                    <div class="subitem" id="subitem7" onclick="updateContent('subitem1', 'text1')">movie poster</div>
+                    <div class="subitem" id="subitem8" onclick="updateContent('subitem1', 'text1')">retro</div>
+                    <div class="subitem" id="subitem9" onclick="updateContent('subitem1', 'text1')">cinematic</div>
+                </div>
+            </div>
+
+            <!-- Подкатегории 6 -->
+            <div class="subitems" id="item6">
+                <div class="row" style="padding-top: 20px">
+                    <div class="subitem" id="subitem1" onclick="updateContent('subitem1', 'text1')">product design</div>
+                    <div class="subitem" id="subitem2" onclick="updateContent('subitem1', 'text1')">health & fitness</div>
+                    <div class="subitem" id="subitem3" onclick="updateContent('subitem1', 'text1')">finance</div>
+                    <div class="subitem" id="subitem4" onclick="updateContent('subitem1', 'text1')">mediation</div>
+                    <div class="subitem" id="subitem5" onclick="updateContent('subitem1', 'text1')">travel</div>
+                    <div class="subitem" id="subitem6" onclick="updateContent('subitem1', 'text1')">studying</div>
+
+                </div>
+
+                <div class="row">
+                    <div class="subitem" id="subitem7" onclick="updateContent('subitem1', 'text1')">idea generation</div>
+                    <div class="subitem" id="subitem8" onclick="updateContent('subitem1', 'text1')">management</div>
+                    <div class="subitem" id="subitem9" onclick="updateContent('subitem1', 'text1')">music</div>
+                    <div class="subitem" id="subitem10" onclick="updateContent('subitem1', 'text1')">education</div>
+                    <div class="subitem" id="subitem11" onclick="updateContent('subitem1', 'text1')">marketing</div>
+                    <div class="subitem" id="subitem12" onclick="updateContent('subitem1', 'text1')">sport</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prompt-section">
+            <div class="input-section">
+                <input id="input" type="text" placeholder="">
+                <button>Generate Image</button>
+            </div>
+
+            <div class="prompt-result-section">
+                <div class="prompt-result" id="prompt-result">
+                    <!-- Тут появится результат при нажатии -->
+                </div>
+                <button onclick="editPrompt()">edit prompt</button>
+            </div>
+
+            <div class="image-result" id="image-result"></div>
+        </div>
+    </div>
+</body>
+   <script type="text/javascript" src="mainScript.js"></script>
+</html>

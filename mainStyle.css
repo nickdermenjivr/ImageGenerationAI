@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(72, 157, 136);
+    -webkit-user-select: none; /* Для Chrome, Safari, Opera */
+    -moz-user-select: none; /* Для Firefox */
+    -ms-user-select: none; /* Для Internet Explorer и Edge */
+    user-select: none; /* Общее свойство */
+}
+
+.outer-container {
+    min-width: 650px;
+    max-width: 50%;
+    height: 100vh; /* 100% от высоты области просмотра */
+    margin: 0 auto; /* Центрирует контейнер по горизонтали */
+}
+
+.container {
+    width: 100%
+    height: 350px;
+    background: rgb(88, 160, 208);
+    margin: 5vh auto 0 auto;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 10px -5px 20px black;
+}
+
+.container h3 {
+    margin: 15px 0px 4px 2px;
+    font-style: oblique;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.item {
+    width: 15%; /* измените на нужную ширину */
+    height: 100px; /* измените на нужную высоту */
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 70, 105);
+    color: white;
+    transition: background-color 0.33s;
+}
+
+.item:hover {
+    background-color: grey;
+}
+
+.subitems {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.subitem {
+    width: 15%; /* измените на нужную ширину */
+    height: 80px; /* измените на нужную высоту */
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.subitem:hover {
+    background-color: lightgrey;
+}
+
+.prompt-section {
+    margin: 30px;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-section input {
+    min-width: 70%; /* измените на нужную ширину */
+    height: 40px; /* измените на нужную высоту */
+    margin-right: 10px;
+    color: orange;
+    padding-left: 10px;
+}
+
+.input-section button {
+    min-width: 30%; /* измените на нужную ширину */
+    height: 40px; /* измените на нужную высоту */
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+.input-section button:active {
+     background-color: #ff8c00;  /* чуть темнее оранжевый цвет */
+}
+
+.prompt-result-section {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.prompt-result {
+    min-width: 70%;
+    height: contain;
+    margin-right: 10px;
+    color: white;
+}
+
+.prompt-result span {
+    color: orange;
+}
+
+.prompt-result-section button {
+    min-width: 30%; /* измените на нужную ширину */
+    height: 25px; /* измените на нужную высоту */
+    background-color: grey;
+    color: white;
+    border: none;
+}
+
+.prompt-result-section button:active {
+     background-color: #ff8c00;  /* чуть темнее оранжевый цвет */
+}
+
+.image-result img {
+    max-width: 40%;
+    border: 1px solid black;
+}
